@@ -22,9 +22,9 @@ const LoginForm = (props) => {
             <br/>
             <a href={forgotPasswordLink} className="align-right">{forgotPasswordLabel}</a>
             <br/>
-            <button onClick={() => loginValidate()}>{loginLabel}</button>
+            <button className="full-width" onClick={() => loginValidate()}>{loginLabel}</button>
             <br/>
-            <a href={createAccountLink} className="align-right">{createAccountLabel}</a>
+            <a href={createAccountLink} className="align-center">{createAccountLabel}</a>
         </div>
     )
 }

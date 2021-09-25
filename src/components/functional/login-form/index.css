@@ -1,0 +1,16 @@
+.App-main {
+    /*height: 200px;
+    position: relative;
+    border: 3px solid green;*/
+  }
+
+.loginForm {
+    color: #fff;
+    text-align: left;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }

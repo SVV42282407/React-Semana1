@@ -2,29 +2,26 @@ import React from 'react';
 import './index.css';
 
 const LoginForm = (props) => {
-    const { usernameLabel,
-            passwordLabel,
-            forgotPasswordLabel,
-            forgotPasswordLink,
-            loginValidate,
-            loginLabel,
-            createAccountLink,
-            createAccountLabel } = props;
+    const { labels,
+            loginValidate } = props;
+
     return (
         <div className="loginForm">
-            <label className="form-label" htmlFor="userName">{usernameLabel}</label>
+            <label className="form-label" htmlFor="userName">{labels.usernameLabel}</label>
             <br/>
             <input className="form-control" name="userName" id="userName" type="text" required />
-            <br/>
-            <label className="form-label" htmlFor="userPassword">{passwordLabel}</label>
+            <br/><br/>
+            <label className="form-label" htmlFor="userPassword">{labels.passwordLabel}</label>
             <br/>
             <input className="form-control" name="userPassword" id="userPassword" type="password" required />
-            <br/>
-            <a href={forgotPasswordLink} className="align-right">{forgotPasswordLabel}</a>
-            <br/>
-            <button className="full-width" onClick={() => loginValidate()}>{loginLabel}</button>
-            <br/>
-            <a href={createAccountLink} className="align-center">{createAccountLabel}</a>
+            <br/><br/>
+            <a href="#" className="align-right">{labels.forgotPasswordLabel}</a>
+            <br/><br/>
+            <button className="full-width" onClick={() => loginValidate()}>{labels.loginLabel}</button>
+            <br/><br/>
+            <div class="row">
+                <a href="#" className="align-center">{labels.createAccountLabel}</a>    
+            </div>
         </div>
     )
 }

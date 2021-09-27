@@ -50,3 +50,8 @@
   .full-width {
     width: 100%;
   }
+
+  .align-center {
+    display: block;
+    text-align: center;
+  }
